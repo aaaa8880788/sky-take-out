@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--SpringBoot 版本-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.5</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <!-- 苍穹外卖基本信息 -->
+    <groupId>com.sky</groupId>
+    <artifactId>sky-take-out</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>sky-take-out</name>
+    <description>苍穹外卖</description>
+    <modules>
+        <module>sky-common</module>
+        <module>sky-pojo</module>
+        <module>sky-server</module>
+    </modules>
+    <!-- 版本控制 -->
+    <properties>
+        <java.version>17</java.version>
+        <springboot.version>2.5.5</springboot.version>
+    </properties>
+    <!-- 依赖管理 -->
+    <!-- <dependencyManagement>
+        <dependencies>
+            &lt;!&ndash; Web模块 &ndash;&gt;
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+            &lt;!&ndash; 测试模块 &ndash;&gt;
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement> -->
+
+    <dependencies>
+        <!-- Web模块 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 测试模块 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
+
+<!--
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+-->
+</project>
