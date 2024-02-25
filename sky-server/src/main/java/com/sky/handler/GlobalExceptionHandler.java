@@ -37,10 +37,7 @@ public class GlobalExceptionHandler {
         String message = ex.getMessage();
         log.error("异常信息：{}", message);
         if(message.contains("Duplicate entry")) {
-            String[] split = message.split(" ");
-            String username = split[2];
-            String TipMessage = username + MessageConstant.ALREADY_EXISTS;
-            return Result.error(TipMessage);
+            return Result.error(MessageConstant.ALREADY_EXISTS);
         }
         return Result.error(MessageConstant.UNKNOWN_ERROR);
     }

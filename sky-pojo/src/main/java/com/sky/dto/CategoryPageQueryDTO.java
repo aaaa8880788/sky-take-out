@@ -8,10 +8,10 @@ import java.io.Serializable;
 public class CategoryPageQueryDTO implements Serializable {
 
     //页码
-    private int page;
+    private Integer page;
 
     //每页记录数
-    private int pageSize;
+    private Integer pageSize;
 
     //分类名称
     private String name;
