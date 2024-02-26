@@ -6,3 +6,8 @@ sky:
     database: sky_take_out
     username: root
     password: root
+  alioss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    access-key-id: LTAI5tGtJ14kHk16iz61F8Ja
+    access-key-secret: z6AUc88DXYQuxD4F1bn2SzuR33IZV0
+    bucket-name: duck-bucket
